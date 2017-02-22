@@ -40,4 +40,5 @@ private:
     State m_state;
 };
 
+#test
 #endif // MAINWINDOW_H
