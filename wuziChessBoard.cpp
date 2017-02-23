@@ -37,7 +37,7 @@ WuZiChessBoard::WuZiChessBoard(QWidget *parent)
     // setStyleSheet("background: yellow");
     
 
-    // setWindowFlags(Qt::FramelessWindowHint);
+    
 }
 
 WuZiChessBoard::~WuZiChessBoard()
