@@ -8,7 +8,7 @@ WuZiChessBoard::WuZiChessBoard(QWidget *parent)
     m_bFinished = false;
     m_stopRandom = true;
     m_pRandomThread = NULL;
-    m_turn = -1;   //黑子先走
+    m_turn = -1;   //潞脷脳脫脧脠脳脽
 
     m_penWidth = m_chessSideLen/(20*m_rows);
     m_rowWidth = m_chessSideLen/(m_rows+1);
@@ -35,7 +35,7 @@ WuZiChessBoard::WuZiChessBoard(QWidget *parent)
 
     // setStyleSheet("background: rgb(200, 150, 100)");
     // setStyleSheet("background: yellow");
-    // setStyleSheet("background: beige");
+    
 
     // setWindowFlags(Qt::FramelessWindowHint);
 }
@@ -83,14 +83,14 @@ void WuZiChessBoard::drawChessPiece(int x, int y)
 
     painter.setRenderHint(QPainter::Antialiasing, true);
 
-    if(m_chessPieces[x][y]==-1)   //黑子
+    if(m_chessPieces[x][y]==-1)   //潞脷脳脫
     {
         painter.setPen(QPen(Qt::black, 0.2, Qt::DashDotLine, Qt::RoundCap));
         painter.setBrush(QBrush(Qt::black, Qt::SolidPattern));
         painter.drawEllipse(x*m_rowWidth+m_delta-0.5*m_radius,
                             y*m_rowWidth+m_delta-0.5*m_radius, m_radius, m_radius);
     }
-    else if(m_chessPieces[x][y]==1)   //白子
+    else if(m_chessPieces[x][y]==1)   //掳脳脳脫
     {
         painter.setPen(QPen(Qt::white, 0.2, Qt::DashDotLine, Qt::RoundCap));
         painter.setBrush(QBrush(Qt::white, Qt::SolidPattern));
