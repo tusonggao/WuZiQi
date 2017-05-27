@@ -1,25 +1,26 @@
 #include "connectserverdlg.h"
+/////////////////////////////////////////////////////
 
 ConnectServerDlg::ConnectServerDlg()
 {
     m_userName = "user1";
     m_opponentName = "user2";
     m_portNUm = 7999;
-    m_colorIsBlack = true; //Ö´ºÚ×Ó ÏÈÊÖ
+    m_colorIsBlack = true; //æ‰§é»‘å­ å…ˆæ‰‹
 
-    m_userNamelabel = new QLabel(ChineseToUTF8_TSG("ÓÃ»§Ãû£º"));
+    m_userNamelabel = new QLabel(ChineseToUTF8_TSG("ç”¨æˆ·åï¼š"));
     m_userNameEdit = new QLineEdit();
-    m_opponentNamelabel = new QLabel(ChineseToUTF8_TSG("¶ÔÊÖ·½ÓÃ»§Ãû£º"));
+    m_opponentNamelabel = new QLabel(ChineseToUTF8_TSG("å¯¹æ‰‹æ–¹ç”¨æˆ·åï¼š"));
     m_opponentNameEdit = new QLineEdit();
-    m_portNumlabel = new QLabel(ChineseToUTF8_TSG("·þÎñ¶Ë¿ÚºÅ£º"));
+    m_portNumlabel = new QLabel(ChineseToUTF8_TSG("æœåŠ¡ç«¯å£å·ï¼š"));
     m_portNumEdit = new QLineEdit();
-    m_colorlabel = new QLabel(ChineseToUTF8_TSG("Æå×ÓÑÕÉ«£º"));
+    m_colorlabel = new QLabel(ChineseToUTF8_TSG("æ£‹å­é¢œè‰²ï¼š"));
     m_colorCombo = new QComboBox();
-    m_colorCombo->addItem(ChineseToUTF8_TSG("ºÚ×Ó£¨ÏÈÊÖ£©"));
-    m_colorCombo->addItem(ChineseToUTF8_TSG("°××Ó£¨ºóÊÖ£©"));
+    m_colorCombo->addItem(ChineseToUTF8_TSG("é»‘å­ï¼ˆå…ˆæ‰‹ï¼‰"));
+    m_colorCombo->addItem(ChineseToUTF8_TSG("ç™½å­ï¼ˆåŽæ‰‹ï¼‰"));
 
-    m_ok = new QPushButton(ChineseToUTF8_TSG("Á¬½Ó·þÎñÆ÷"));
-    m_cancel = new QPushButton(ChineseToUTF8_TSG("È¡Ïû"));
+    m_ok = new QPushButton(ChineseToUTF8_TSG("è¿žæŽ¥æœåŠ¡å™¨"));
+    m_cancel = new QPushButton(ChineseToUTF8_TSG("å–æ¶ˆ"));
 
     QGridLayout *mainLayout = new QGridLayout(this);
     mainLayout->addWidget(m_userNamelabel, 0, 0, 1, 1);
