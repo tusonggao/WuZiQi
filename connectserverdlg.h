@@ -3,7 +3,7 @@
 
 #include "../commonHeaderFiles/commonwidgetheader.h"
 
-///////////////////////////////////////////////////////
+/////////////////////
 
 class ConnectServerDlg: public QDialog
 {
