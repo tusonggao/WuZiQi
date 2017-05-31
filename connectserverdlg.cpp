@@ -2,6 +2,7 @@
 
 /////////////////////////////////////////////////////////
 
+
 ConnectServerDlg::ConnectServerDlg()
 {
     m_userName = "user1";
