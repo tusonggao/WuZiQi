@@ -19,6 +19,7 @@ private slots:
     void networkLoad();
     void about();
     void connectServerSuccess(QString &title);
+    
 
 private:
     enum State{
