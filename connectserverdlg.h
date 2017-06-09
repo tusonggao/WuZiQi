@@ -4,8 +4,6 @@
 #include "../commonHeaderFiles/commonwidgetheader.h"
 
 
-
-
 class ConnectServerDlg: public QDialog
 {
     Q_OBJECT
