@@ -4,7 +4,7 @@
 #include "wuziPlayboardclient.h"
 #include "wuziplayboarddesktop.h"
 
-////////////////////////////////////////////////////////
+
 
 class MainWindow : public QMainWindow
 {
