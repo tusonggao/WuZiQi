@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 
+
 MainWindow::MainWindow(QWidget *parent)
 {
     m_playBoardClient = NULL;
@@ -17,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     QLabel *label = new QLabel;
     setCentralWidget(label);
 
-    setWindowTitle(ChineseToUTF8_TSG("Îå×ÓÆåÓÎÏ·"));
+    setWindowTitle(ChineseToUTF8_TSG("äº”å­æ£‹æ¸¸æˆ"));
 }
 
 MainWindow::~MainWindow()
@@ -27,23 +28,23 @@ MainWindow::~MainWindow()
 
 void MainWindow::createMenus()
 {
-    selectMenu = menuBar()->addMenu(ChineseToUTF8_TSG("Ñ¡Ôñ"));
+    selectMenu = menuBar()->addMenu(ChineseToUTF8_TSG("é€‰æ‹©"));
     selectMenu->addAction(desktopLoadAction);
     selectMenu->addAction(networkLoadAction);
 
-    helpMenu = menuBar()->addMenu(ChineseToUTF8_TSG("°ïÖú"));
+    helpMenu = menuBar()->addMenu(ChineseToUTF8_TSG("å¸®åŠ©"));
     helpMenu->addAction(aboutAction);
 }
 
 void MainWindow::createActions()
 {
-    desktopLoadAction = new QAction(ChineseToUTF8_TSG("µ¥»ú°æ"), this);
+    desktopLoadAction = new QAction(ChineseToUTF8_TSG("å•æœºç‰ˆ"), this);
     connect(desktopLoadAction, SIGNAL(triggered()), this, SLOT(desktopLoad()));
 
-    networkLoadAction = new QAction(ChineseToUTF8_TSG("ÍøÂç°æ"), this);
+    networkLoadAction = new QAction(ChineseToUTF8_TSG("ç½‘ç»œç‰ˆ"), this);
     connect(networkLoadAction, SIGNAL(triggered()), this, SLOT(networkLoad()));
 
-    aboutAction = new QAction(ChineseToUTF8_TSG("¹ØÓÚ"), this);
+    aboutAction = new QAction(ChineseToUTF8_TSG("å…³äº"), this);
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(about()));
 }
 
@@ -51,13 +52,13 @@ void MainWindow::about()
 {
     QString qstring1, qstring2;
 
-    qstring1 = ChineseToUTF8_TSG("¹ØÓÚÎå×ÓÆåÓÎÏ·");
+    qstring1 = ChineseToUTF8_TSG("å…³äºäº”å­æ£‹æ¸¸æˆ");
     qstring2 = ChineseToUTF8_TSG(
-               "<h2>Îå×ÓÆåĞ¡ÓÎÏ· 1.1</h2>"
+               "<h2>äº”å­æ£‹å°æ¸¸æˆ 1.1</h2>"
                "<p>Copyright &copy; 2016 Software Inc."
-               "<p>Îå×ÓÆåĞ¡ÓÎÏ· ÊÇÒ»¸ö»ùÓÚQTµÄĞ¡ĞÍÒæÖÇÓÎÏ·"
-               "<p>×÷Õß£ºÍ¿ËÉ¸ß"
-               "<p>ÈÕÆÚ£º2016-06-23");
+               "<p>äº”å­æ£‹å°æ¸¸æˆ æ˜¯ä¸€ä¸ªåŸºäºQTçš„å°å‹ç›Šæ™ºæ¸¸æˆ"
+               "<p>ä½œè€…ï¼šæ¶‚æ¾é«˜"
+               "<p>æ—¥æœŸï¼š2016-06-23");
 
     QMessageBox::about(this, qstring1, qstring2);
 }
@@ -68,7 +69,7 @@ void MainWindow::desktopLoad()
     {
         m_playBoardDesktop = new WuziPlayBoardDesktop;
         setCentralWidget(m_playBoardDesktop);
-        setWindowTitle(ChineseToUTF8_TSG("Îå×ÓÆåÓÎÏ· µ¥»ú°æ"));
+        setWindowTitle(ChineseToUTF8_TSG("äº”å­æ£‹æ¸¸æˆ å•æœºç‰ˆ"));
         m_state = desktop;
     }
 }
@@ -79,7 +80,7 @@ void MainWindow::networkLoad()
     {
         m_playBoardClient = new WuziPlayBoardClient;
         setCentralWidget(m_playBoardClient);
-        setWindowTitle(ChineseToUTF8_TSG("Îå×ÓÆåÓÎÏ· ÍøÂç°æ"));
+        setWindowTitle(ChineseToUTF8_TSG("äº”å­æ£‹æ¸¸æˆ ç½‘ç»œç‰ˆ"));
         m_state = network;
 
         connect(m_playBoardClient, SIGNAL(connectServerSuccess(QString &)),
