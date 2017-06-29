@@ -1,6 +1,5 @@
 #include "WuZiChessBoardClient.h"
 
-///////////////////////////////////////////////////////////
 
 WuZiChessBoardClient::WuZiChessBoardClient(QWidget *parent)
 {
