@@ -1,6 +1,6 @@
 #include "connectserverdlg.h"
 
-////////////////////
+
 
 
 ConnectServerDlg::ConnectServerDlg()
