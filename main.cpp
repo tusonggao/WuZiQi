@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 
+// I am doing this to remind myself to code everyday!
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
