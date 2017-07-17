@@ -4,7 +4,6 @@
 #include "wuziPlayboardclient.h"
 #include "wuziplayboarddesktop.h"
 
-
 #I am doing this to remind myself to code EVERYDAY!
 
 class MainWindow : public QMainWindow
