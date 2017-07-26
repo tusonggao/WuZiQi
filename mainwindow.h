@@ -4,7 +4,8 @@
 #include "wuziPlayboardclient.h"
 #include "wuziplayboarddesktop.h"
 
-#I am doing this to remind myself to code EVERYDAY!
+#I am doing this to remind myself to code EVERYDAY! Today, I have written code on my local computer.
+#I am doing this to remind myself to code EVERYDAY! Today, I have written code on my local computer.
 
 
 
