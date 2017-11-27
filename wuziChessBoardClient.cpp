@@ -1,7 +1,5 @@
 #include "WuZiChessBoardClient.h"
 
-
-
 WuZiChessBoardClient::WuZiChessBoardClient(QWidget *parent)
 {
     m_tcpSocket = NULL;
