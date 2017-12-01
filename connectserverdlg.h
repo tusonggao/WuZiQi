@@ -6,8 +6,6 @@
 
 
 
-
-
 class ConnectServerDlg: public QDialog
 {
     Q_OBJECT
