@@ -1,7 +1,5 @@
 #include "mainwindow.h"
 
-
-
 MainWindow::MainWindow(QWidget *parent)
 {
     m_playBoardClient = NULL;
