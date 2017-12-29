@@ -4,6 +4,8 @@
 #include "./commonHeaderFiles/commonwidgetheader.h"
 #include "wuziChessBoard.h"
 
+
+
 class WuziPlayBoard : public QDialog
 {
     Q_OBJECT
