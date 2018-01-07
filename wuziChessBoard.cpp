@@ -1,5 +1,6 @@
 #include "wuziChessBoard.h"
 
+
 WuZiChessBoard::WuZiChessBoard(QWidget *parent)
 {
     m_chessSideLen = 630;
